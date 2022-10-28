@@ -1,7 +1,12 @@
+using EntityFrameworkSP_Demo.Data;
+using EntityFrameworkSP_Demo.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+// Add services to the container.
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddDbContext<DbContextClass>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
