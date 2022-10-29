@@ -4,7 +4,7 @@ using EntityFrameworkSP_Demo.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Add services to the container.
+//Register services inside the Program class
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddDbContext<DbContextClass>();
 builder.Services.AddControllers();
