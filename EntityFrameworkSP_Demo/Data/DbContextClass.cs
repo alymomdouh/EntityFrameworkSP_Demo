@@ -17,5 +17,9 @@ namespace EntityFrameworkSP_Demo.Data
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
         }
         public DbSet<Product> Product { get; set; }
+
+        //to add migration must install package Microsoft.EntityFrameworkCore.Tools
+        //add-migration "Initial"
+        // update-database
     }
 }
