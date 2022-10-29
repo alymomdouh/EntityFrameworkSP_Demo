@@ -21,5 +21,7 @@ namespace EntityFrameworkSP_Demo.Data
         //to add migration must install package Microsoft.EntityFrameworkCore.Tools
         //add-migration "Initial"
         // update-database
+        //add-migration AddStoredProcedure
+        // update-database
     }
 }
